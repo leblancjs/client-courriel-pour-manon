@@ -30,7 +30,8 @@ public class ClientCourrielPourManon extends Application {
         VBox.setVgrow(lesCourriels, Priority.ALWAYS);
 
         Button lePiton = new Button("Télécharger les courriels");
-        lePiton.setOnAction(evenement -> courrielsAffichees.setAll(client.obtenirCourriels()));
+        lePiton.setOnAction(evenement -> CompletableFuture.supplyAsync(client::obtenirCourriels)
+                .thenAcceptAsync(courrielsAffichees::setAll, Platform::runLater));
 
         primaryStage.setScene(new Scene(new VBox(lesCourriels, lePiton)));
         primaryStage.setTitle("Client courriel pour Manon");
