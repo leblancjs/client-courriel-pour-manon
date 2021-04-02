@@ -1,6 +1,6 @@
 plugins {
-    id 'java'
-    id 'org.openjfx.javafxplugin' version '0.0.8'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
 }
 
 group 'com.github.leblancjs'
@@ -15,6 +15,4 @@ repositories {
     mavenCentral()
 }
 
-dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
-}
+mainClassName = 'com.github.leblancjs.client.courriel.pour.manon/com.github.leblancjs.client.courriel.pour.manon.ClientCourrielPourManon'
