@@ -25,6 +25,6 @@ gradlew run
 ### IDE
 Tu peux également ouvrir le projet dans ton IDE préféré,
 tel qu'[IntelliJ IDEA](https://www.jetbrains.com/idea/),
-[Eclipse](https://www.eclipse.org/downloads/packages/release/luna/sr2/eclipse-ide-java-developers) ou
+[Eclipse](https://www.eclipse.org/downloads/packages/) ou
 [NetBeans](https://netbeans.apache.org) et exécuter l'application à partir de la classe
 [ClientCourrielPourManon](src/main/java/com/github/leblancjs/client/courriel/pour/manon/ClientCourrielPourManon.java).
